@@ -46,9 +46,9 @@ for(var i=1; i<=row;i++ ){
     var print ="";
     for(var j= 1; j<=(row/2);j++){
         if(i%2!=0){
-            print += "W B " ;
+            print += "A B " ;
         }else{
-            print += "B W " ;
+            print += "B A" ;
         }
     }
     console.log(print);

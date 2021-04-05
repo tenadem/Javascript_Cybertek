@@ -169,7 +169,7 @@ for(var i=1; i<=row;i++){
 1666666
 7777777
 
-*/
+
 
 
 var row = 10;
@@ -185,3 +185,26 @@ for(var i = 1; i <= row ; i++){
     console.log(print);
 
 }
+
+
+
+1
+2 6
+3 7 10
+4 8 11 13
+5 9 12 14 15
+
+var row=5;
+for (var i = 1; i <= row; i++){
+    var str="";
+    var num = i;
+    for (var j = 1; j <= i; j++){
+        str=str+num+" ";
+        num = num+row-j;
+    }
+    console.log(str);
+}
+*/
+
+
+

@@ -39,7 +39,7 @@ if(arr.indexOf(searchChar)!=-1){
 
 
 
-5
+4
 */
 var n = 15;
 var arr = Array(n);

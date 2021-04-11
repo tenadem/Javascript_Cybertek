@@ -65,7 +65,7 @@ console.log(myFish);
 
 
 //slice() ==> not modified  the original array: each time we create a new array 
-*/
+
 
 var animals=["dog","cat","monkey","donkey","dino","elephant"];
 
@@ -98,5 +98,61 @@ console.log(animals8);
 console.log(animals9);
 
 
+//index Of() method ==> show the first index of the element in the array. if not exist returns -1
 
+var scores  = [10,20,30,10,40,20];
+
+console.log(scores.indexOf(10));// 0;
+console.log(scores.indexOf(20));// 1;
+console.log(scores.indexOf(10,2));
+var n1 = scores.indexOf(30,3); // 3
+console.log(n1);//-1 ==> 30 is not exist after the 3. index
+
+console.log(scores.indexOf(20,-1))// 5 ==> scores.length = 6 ==> 6 + (-1) = 5 
+
+console.log(scores.indexOf(20,-5))// 1 ==> 6 +(-5) = 1 
+
+console.log(scores.indexOf(20,-7)); //5 
+
+
+
+
+//lastIndexOf() method
+var numbers = [2,5,9,2];
+
+console.log(numbers.lastIndexOf(2));//3
+console.log(numbers.lastIndexOf(7));//-1
+console.log(numbers.lastIndexOf(2,3));//3
+console.log(numbers.lastIndexOf(2,2));//0
+console.log(numbers.lastIndexOf(2,-2));//0 ==> number.length=4 ==> 4 +(-2) = from the 2. index
+console.log(numbers.lastIndexOf(2,-1));//3
+
+
+
+
+//sort() method
+
+var numbers = [1,30,40,212];
+numbers.sort();
+console.log(numbers);
+
+var mixArray = ["cat","Ant", 3, "elephant","Bee", 67];
+mixArray.sort();
+console.log(mixArray);
+
+*/
+var indices = [];
+var array = ["a","b","a","c","a","d","b","c","d"];
+var element = "d";
+
+for(var i = 0;i<array.length; i++){
+     if(array[i]== element){
+         indices.push(array.indexOf(element,i));
+     }
+
+}
+
+console.log(indices);
+
+ 
 
